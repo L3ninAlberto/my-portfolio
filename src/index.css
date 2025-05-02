@@ -9,14 +9,5 @@ body {
   --color-primary: #46cf8f;
   --color-secondary: #d1f2eb;
 
-  --shadow-box: 5px 5px #46cf8f;
-}
-
-@layer components {
-  /* spacing */
-  .hp {
-    @apply px-28;
-  }
-
-  /* typography */
+  --shadow-box: 3px 3px #46cf8f;
 }
