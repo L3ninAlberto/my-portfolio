@@ -11,3 +11,9 @@ body {
 
   --shadow-box: 3px 3px #46cf8f;
 }
+
+@layer components {
+  .h {
+    @apply text-primary font-bold border-b-2 border-primary;
+  }
+}

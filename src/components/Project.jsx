@@ -12,7 +12,7 @@ export default function Project() {
       }`}
       onClick={toggleExpand}
     >
-      <p className="text-primary text-lg font-bold border-b-2 border-primary">
+      <p className="h text-lg">
         Lorem ipsum dolor sit amet consectetur adipisicing elit
       </p>
 
@@ -36,17 +36,15 @@ export default function Project() {
             dicta non provident. Veniam.
           </p>
 
-          <p className="font-bold text-primary border-b-2 border-primary">
-            Tecnologías utilizadas
-          </p>
+          <p className="h">Tecnologías utilizadas</p>
 
           <ul className="w-full grid grid-cols-20 gap-3">
             {Array.from({ length: 5 }).map((_, index) => (
               <li key={index}>
                 <img
                   src="imgs/html.png"
-                  alt=""
-                  className="w-full h-full aspect-square object-contain"
+                  alt="skill"
+                  className="w-10 h-10 aspect-square object-contain"
                 />
               </li>
             ))}

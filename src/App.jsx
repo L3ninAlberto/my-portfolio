@@ -1,4 +1,7 @@
+import { useState } from "react";
 import ProjectsSection from "./components/ProjectsSection";
+import SkillsSection from "./components/SkillsSection";
+import ExperienceSection from "./components/ExperienceSection";
 
 function App() {
   const sections = [
@@ -8,15 +11,17 @@ function App() {
     },
     {
       name: "Habilidades",
-      content: <p>Habilidades</p>,
+      content: <SkillsSection />,
     },
     {
       name: "Formación y experiencia",
-      content: <p>Formación y experiencia</p>,
+      content: <ExperienceSection />,
     },
   ];
 
-  const changeSection = (index) => console.log(index);
+  const [currentSection, setCurrentSection] = useState(sections[0]);
+
+  const changeSection = (index) => setCurrentSection(sections[index]);
 
   return (
     <div className="px-28 py-16">
@@ -44,7 +49,11 @@ function App() {
             <button
               key={index}
               type="button"
-              className="py-2 px-8 text-primary text-lg font-bold border-2 border-primary cursor-pointer hover:bg-primary hover:text-bg"
+              className={`py-2 px-8 text-lg font-bold border-2 border-primary cursor-pointer ${
+                currentSection.name === section.name
+                  ? "bg-primary text-bg"
+                  : "text-primary hover:bg-primary hover:text-bg"
+              }`}
               onClick={() => changeSection(index)}
             >
               {section.name}
@@ -53,6 +62,7 @@ function App() {
         </div>
 
         {/* section content */}
+        {currentSection.content}
       </div>
     </div>
   );
