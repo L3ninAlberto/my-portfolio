@@ -24,7 +24,7 @@ function App() {
   const changeSection = (index) => setCurrentSection(sections[index]);
 
   return (
-    <div className="px-28 py-16">
+    <div className="relative px-28 py-16">
       <div className="flex items-center justify-center gap-6 py-5 mb-10 border-2 border-primary shadow-box">
         <div className="w-40 h-40">
           <img
@@ -43,7 +43,7 @@ function App() {
         </div>
       </div>
 
-      <div>
+      <div className="mb-16">
         <div className="mb-5 border-b-2 border-primary">
           {sections.map((section, index) => (
             <button
@@ -64,6 +64,46 @@ function App() {
         {/* section content */}
         {currentSection.content}
       </div>
+
+      {/* up button */}
+      <button
+        type="button"
+        className="fixed bottom-5 right-5 w-11 h-11 flex justify-center items-center bg-primary cursor-pointer"
+      >
+        <div className="triangle" />
+      </button>
+
+      <footer className="flex justify-between py-2 border-t-2 border-primary">
+        <div className="flex gap-16">
+          <div>
+            <p className="mb-1 text-primary">Sígueme</p>
+            <div className="flex gap-2">
+              <div className="w-6 h-6 aspect-square bg-secondary" />
+              <div className="w-6 h-6 aspect-square bg-secondary" />
+              <div className="w-6 h-6 aspect-square bg-secondary" />
+            </div>
+          </div>
+          <div>
+            <p className="mb-1 text-primary">Contáctame</p>
+            <div className="flex flex-col gap-2">
+              <div className="flex gap-2">
+                <div className="w-6 h-6 aspect-square bg-secondary" />
+                <p className="text-secondary">+52 6949511095</p>
+              </div>
+              <div className="flex gap-2">
+                <div className="w-6 h-6 aspect-square bg-secondary" />
+                <p className="text-secondary">lgomez@example.com</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <a href="#" className="flex gap-2">
+            <div className="w-6 h-6 aspect-square bg-secondary" />
+            <p className="text-primary">Descarga mi CV</p>
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }

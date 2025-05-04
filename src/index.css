@@ -4,6 +4,14 @@ body {
   @apply bg-bg;
 }
 
+.triangle {
+  width: 0;
+  height: 0;
+  border-left: 15px solid transparent;
+  border-right: 15px solid transparent;
+  border-bottom: 30px solid #030508;
+}
+
 @theme {
   --color-bg: #030508;
   --color-primary: #46cf8f;
