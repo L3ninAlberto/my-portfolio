@@ -7,12 +7,14 @@ export default function Project() {
 
   return (
     <div
-      className={`w-full h-max flex flex-col gap-4 p-4 border-2 border-primary ${
-        expand ? "col-span-2 shadow-box" : "hover:shadow-box cursor-pointer"
+      className={`w-full h-max flex flex-col gap-4 p-4 text-center border-2 border-primary rounded-sm ${
+        expand
+          ? "col-span-2 shadow-md outline-box"
+          : "hover:cursor-pointer hover:outline-2 hover:-outline-offset-4 hover:outline-primary"
       }`}
       onClick={toggleExpand}
     >
-      <p className="h text-lg">
+      <p className="head-primary">
         Lorem ipsum dolor sit amet consectetur adipisicing elit
       </p>
 
@@ -36,9 +38,9 @@ export default function Project() {
             dicta non provident. Veniam.
           </p>
 
-          <p className="h">Tecnologías utilizadas</p>
+          <p className="head-secondary">Tecnologías utilizadas</p>
 
-          <ul className="w-full grid grid-cols-20 gap-3">
+          <ul className="w-full flex justify-center gap-3">
             {Array.from({ length: 5 }).map((_, index) => (
               <li key={index}>
                 <img

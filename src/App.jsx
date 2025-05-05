@@ -2,6 +2,7 @@ import { useState } from "react";
 import ProjectsSection from "./components/ProjectsSection";
 import SkillsSection from "./components/SkillsSection";
 import ExperienceSection from "./components/ExperienceSection";
+import UpButton from "./components/UpButton";
 
 function App() {
   const sections = [
@@ -25,7 +26,7 @@ function App() {
 
   return (
     <div className="relative px-28 py-16">
-      <div className="flex items-center justify-center gap-6 py-5 mb-10 border-2 border-primary shadow-box">
+      <div className="flex items-center justify-center gap-6 py-5 border-b-2 border-b-primary">
         <div className="w-40 h-40">
           <img
             src="imgs/face.webp"
@@ -43,16 +44,16 @@ function App() {
         </div>
       </div>
 
-      <div className="mb-16">
-        <div className="mb-5 border-b-2 border-primary">
+      <div className="mb-16 -translate-y-0.5">
+        <div className="text-center mb-5">
           {sections.map((section, index) => (
             <button
               key={index}
               type="button"
-              className={`py-2 px-8 text-lg font-bold border-2 border-primary cursor-pointer ${
+              className={`w-72 py-2 font-bold border-2 border-primary cursor-pointer ${
                 currentSection.name === section.name
-                  ? "bg-primary text-bg"
-                  : "text-primary hover:bg-primary hover:text-bg"
+                  ? "text-primary outline-box"
+                  : "text-secondary"
               }`}
               onClick={() => changeSection(index)}
             >
@@ -65,13 +66,7 @@ function App() {
         {currentSection.content}
       </div>
 
-      {/* up button */}
-      <button
-        type="button"
-        className="fixed bottom-5 right-5 w-11 h-11 flex justify-center items-center bg-primary cursor-pointer"
-      >
-        <div className="triangle" />
-      </button>
+      <UpButton />
 
       <footer className="flex justify-between py-2 border-t-2 border-primary">
         <div className="flex gap-16">
@@ -88,7 +83,7 @@ function App() {
             <div className="flex flex-col gap-2">
               <div className="flex gap-2">
                 <div className="w-6 h-6 aspect-square bg-secondary" />
-                <p className="text-secondary">+52 6949511095</p>
+                <p className="text-secondary">+52 694 95 110 95</p>
               </div>
               <div className="flex gap-2">
                 <div className="w-6 h-6 aspect-square bg-secondary" />
