@@ -9,14 +9,10 @@ export default function SkillsSubsection({ title, skills = [] }) {
         {skills.map((_, index) => (
           <li
             key={index}
-            className="flex gap-2 items-center p-2 text-secondary border-2 border-primary rounded-sm"
+            className="flex gap-2 items-center p-2 text-yellow-500 border-2 border-primary rounded-sm"
           >
-            <img
-              src="imgs/html.png"
-              alt="skill"
-              className="w-10 h-10 aspect-square object-contain"
-            />
-            <p>Skill</p>
+            <i class="fa-brands fa-js text-4xl"></i>
+            <p className="font-bold">JavaScript</p>
           </li>
         ))}
       </ul>

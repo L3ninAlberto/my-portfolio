@@ -72,31 +72,28 @@ function App() {
         <div className="flex gap-16">
           <div>
             <p className="mb-1 text-primary">Sígueme</p>
-            <div className="flex gap-2">
-              <div className="w-6 h-6 aspect-square bg-secondary" />
-              <div className="w-6 h-6 aspect-square bg-secondary" />
-              <div className="w-6 h-6 aspect-square bg-secondary" />
+            <div className="flex gap-2 text-secondary text-xl">
+              <a href="#">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="#">
+                <i class="fa-brands fa-github"></i>
+              </a>
             </div>
           </div>
           <div>
             <p className="mb-1 text-primary">Contáctame</p>
-            <div className="flex flex-col gap-2">
-              <div className="flex gap-2">
-                <div className="w-6 h-6 aspect-square bg-secondary" />
-                <p className="text-secondary">+52 694 95 110 95</p>
+            <div className="flex flex-col gap-2 text-secondary">
+              <div className="flex gap-2 items-center ">
+                <i class="fa-solid fa-phone"></i>
+                <p>+52 694 95 110 95</p>
               </div>
-              <div className="flex gap-2">
-                <div className="w-6 h-6 aspect-square bg-secondary" />
-                <p className="text-secondary">lgomez@example.com</p>
+              <div className="flex gap-2 items-center">
+                <i class="fa-solid fa-envelope"></i>
+                <p>lgomez@example.com</p>
               </div>
             </div>
           </div>
-        </div>
-        <div>
-          <a href="#" className="flex gap-2">
-            <div className="w-6 h-6 aspect-square bg-secondary" />
-            <p className="text-primary">Descarga mi CV</p>
-          </a>
         </div>
       </footer>
     </div>

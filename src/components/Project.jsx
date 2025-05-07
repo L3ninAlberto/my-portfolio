@@ -43,11 +43,7 @@ export default function Project() {
           <ul className="w-full flex justify-center gap-3">
             {Array.from({ length: 5 }).map((_, index) => (
               <li key={index}>
-                <img
-                  src="imgs/html.png"
-                  alt="skill"
-                  className="w-10 h-10 aspect-square object-contain"
-                />
+                <i class="fa-brands fa-html5 text-orange-600 text-5xl"></i>
               </li>
             ))}
           </ul>

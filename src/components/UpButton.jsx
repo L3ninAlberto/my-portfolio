@@ -19,7 +19,7 @@ export default function UpButton() {
       } fixed bottom-5 right-5 w-11 h-11 flex justify-center items-center border-2 border-primary rounded-full cursor-pointer`}
       onClick={up}
     >
-      <div className="triangle" />
+      <i class="fa-solid fa-caret-up text-primary text-2xl"></i>
     </button>
   );
 }
