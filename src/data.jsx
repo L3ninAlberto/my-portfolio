@@ -5,7 +5,7 @@ const categories = {
   P: "Desarrollo personal",
 };
 
-const technologies = {
+export const technologies = {
   HTML: {
     name: "HTML",
     icon: <i className="fa-brands fa-html5 text-[#F16529] text-4xl"></i>,
