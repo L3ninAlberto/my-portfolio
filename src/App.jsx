@@ -15,7 +15,7 @@ function App() {
       content: <SkillsSection />,
     },
     {
-      name: "Formación y experiencia",
+      name: "Experiencia",
       content: <ExperienceSection />,
     },
   ];
@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="relative px-28 py-16">
-      <div className="flex items-center justify-center gap-6 py-5 border-b-2 border-b-primary">
+      <div className="flex items-center justify-center gap-6 py-5 border-b-2 border-b-secondary">
         <div className="w-40 h-40">
           <img
             src="imgs/face.webp"
@@ -50,10 +50,10 @@ function App() {
             <button
               key={index}
               type="button"
-              className={`w-72 py-2 font-bold border-2 border-primary cursor-pointer ${
+              className={`w-72 py-2 font-bold text-secondary cursor-pointer ${
                 currentSection.name === section.name
-                  ? "text-primary outline-box"
-                  : "text-secondary"
+                  ? "border-b-2 border-secondary"
+                  : ""
               }`}
               onClick={() => changeSection(index)}
             >
@@ -68,11 +68,11 @@ function App() {
 
       <UpButton />
 
-      <footer className="flex justify-between py-2 border-t-2 border-primary">
+      <footer className="flex justify-between py-2 text-secondary border-t-2 border-secondary">
         <div className="flex gap-16">
           <div>
-            <p className="mb-1 text-primary">Sígueme</p>
-            <div className="flex gap-2 text-secondary text-xl">
+            <p className="mb-1 font-bold">Sígueme</p>
+            <div className="flex gap-2 text-xl">
               <a href="#">
                 <i class="fa-brands fa-linkedin"></i>
               </a>
@@ -82,8 +82,8 @@ function App() {
             </div>
           </div>
           <div>
-            <p className="mb-1 text-primary">Contáctame</p>
-            <div className="flex flex-col gap-2 text-secondary">
+            <p className="mb-1 font-bold">Contáctame</p>
+            <div className="flex flex-col gap-2">
               <div className="flex gap-2 items-center ">
                 <i class="fa-solid fa-phone"></i>
                 <p>+52 694 95 110 95</p>

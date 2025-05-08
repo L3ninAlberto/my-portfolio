@@ -7,14 +7,14 @@ export default function Project({ ...props }) {
 
   return (
     <div
-      className={`w-full h-max flex flex-col gap-4 p-4 text-center border-2 border-primary rounded-sm ${
+      className={`w-full h-max flex flex-col gap-4 p-4 text-center border-2 border-secondary rounded-sm ${
         expand
-          ? "col-span-2 shadow-md outline-box"
-          : "hover:cursor-pointer hover:outline-2 hover:-outline-offset-4 hover:outline-primary"
+          ? "col-span-2 shadow-md"
+          : "hover:cursor-pointer hover:outline-2 hover:-outline-offset-8 hover:outline-secondary"
       }`}
       onClick={toggleExpand}
     >
-      <p className="head-primary">{props.name}</p>
+      <p className="head text-lg">{props.name}</p>
 
       {expand ? (
         <div className="grow flex flex-col gap-4">
@@ -27,12 +27,12 @@ export default function Project({ ...props }) {
                   props.imgsAlias
                 }${index + 1}.webp`}
                 alt="img"
-                className="w-full h-full object-contain object-top"
+                className="w-full h-full object-fill object-top"
               />
             ))}
           </ul>
           <p className="text-secondary text-sm">{props.description}</p>
-          <p className="head-secondary">Tecnologías utilizadas</p>
+          <p className="head">Tecnologías utilizadas</p>
           <ul className="w-full flex justify-center gap-3">
             {props.technologies.map((technology, index) => (
               <li key={index} className="flex flex-col">
@@ -46,7 +46,7 @@ export default function Project({ ...props }) {
               href={props.link}
               target="_blank"
               rel="noopener noreferrer"
-              className="self-center w-fit flex gap-1 items-center text-primary hover:underline"
+              className="self-center w-fit flex gap-1 items-center text-secondary hover:underline"
             >
               Ir al proyecto
               <i class="fa-solid fa-up-right-from-square"></i>

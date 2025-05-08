@@ -1,8 +1,18 @@
-const categories = {
-  S: "Estadías profesionales",
-  UT: "Universitario en equipo",
-  UI: "Universitario individual",
-  P: "Desarrollo personal",
+export const workExperiences = [
+  {
+    name: "Universidad Tecnológica de Escuinapa",
+    img: "utesc.webp",
+    description:
+      "Participación en la construcción del proyecto Examen UTEsc durante mi periodo de estadías profesionales junto al encargado de sistemas de la Universidad utilizando la metodología en Espiral.",
+    period: "Mayo - Agosto del 2022",
+  },
+];
+
+const projectCategories = {
+  S: "Proyecto de estadías profesionales",
+  UT: "Proyecto universitario en equipo",
+  UI: "Proyecto universitario individual",
+  P: "Proyecto personal",
 };
 
 export const technologies = {
@@ -47,7 +57,7 @@ export const technologies = {
 export const projects = [
   {
     name: "Examen UTEsc",
-    category: categories.S,
+    category: projectCategories.S,
     description:
       "Aplicación web con el objetivo de evaluar el conocimiento previo de todos los aspirantes de nuevo ingreso que quieren cursar alguna de las carreras de la Universidad Tecnológica de Escuinapa en el área de Expresión Oral y Escrita, Matemáticas e Inglés.",
     link: null,
@@ -62,7 +72,7 @@ export const projects = [
   },
   {
     name: "Sitio IDGS",
-    category: categories.UT,
+    category: projectCategories.UT,
     description:
       "Sitio web con el objetivo de promocionar el contenido de la carrera Ingeniería en Desarrollo y Gestión de Software de la Universidad Tecnológica de Escuinapa a todas las personas interesadas en cursar, principalmente estudiantes de preparatoria.",
     link: "https://sitioidgs.proyectosidgs.com/",
@@ -77,12 +87,12 @@ export const projects = [
   },
   {
     name: "Aula Virtual de Idiomas UTEsc",
-    category: categories.UI,
+    category: projectCategories.UI,
     description:
       "Aplicación web responsiva (enfocada principalmente a uso móvil) para ayudar a los estudiantes de la Universidad Tecnológica de Escuinapa a reforzar sus conocimientos de los distintos temas del idioma Inglés, cuya principal función es el seguimiento de los resultados registrados de los exámenes que se realicen al finalizar cada tema para evaluar el progreso del aprendizaje.",
     link: null,
     imgsAlias: "avi",
-    imgsQty: 7,
+    imgsQty: 6,
     technologies: [
       technologies.REACT,
       technologies.PHP,
@@ -92,7 +102,7 @@ export const projects = [
   },
   {
     name: "Servicios UTEsc",
-    category: categories.UT,
+    category: projectCategories.UT,
     description:
       "Aplicación web para que todos los estudiantes interesados publiquen sus habilidades a modo de servicios que otros estudiantes pueden necesitar, creando así una red de colaboración mutua entre todos los estudiantes de la Universidad Tecnológica de Escuinapa.",
     link: null,
@@ -108,7 +118,7 @@ export const projects = [
   },
   {
     name: "Stainart",
-    category: categories.UT,
+    category: projectCategories.UT,
     description:
       "Aplicación web enfocada en la publicación de obras de arte plástica (pintura, dibujo, manualidades, escultura, etc.) a modo de red social, donde cualquier persona tiene la oportunidad de dar a conocer sus habilidades.",
     link: null,
@@ -125,7 +135,7 @@ export const projects = [
   },
   {
     name: "Sonic Enemigos",
-    category: categories.P,
+    category: projectCategories.P,
     description:
       "Compendio de información, imágenes y videos de algunos de los enemigos más poderosos de la franquicia de Sonic The Hedgehog.",
     link: null,
@@ -135,7 +145,7 @@ export const projects = [
   },
   {
     name: "Minecraft shopping cart",
-    category: categories.P,
+    category: projectCategories.P,
     description:
       "Simulación de un carrito de compra inspirado en el universo del videojuego Minecraft.",
     link: null,
@@ -150,7 +160,7 @@ export const projects = [
   },
   {
     name: "Routime",
-    category: categories.UT,
+    category: projectCategories.UT,
     description:
       "Aplicación web que permite agendar las actividades de cualquier persona a lo largo de los días de la semana de manera sencilla e intuitiva.",
     link: null,
