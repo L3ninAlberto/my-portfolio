@@ -9,7 +9,7 @@ export default function Project({ ...props }) {
     <div
       className={`w-full h-max flex flex-col gap-4 p-4 text-center border-2 border-secondary rounded-sm ${
         expand
-          ? "col-span-2 shadow-md"
+          ? "lg:col-span-2 shadow-md"
           : "hover:cursor-pointer hover:outline-2 hover:-outline-offset-8 hover:outline-secondary"
       }`}
       onClick={toggleExpand}
@@ -19,7 +19,7 @@ export default function Project({ ...props }) {
       {expand ? (
         <div className="grow flex flex-col gap-4">
           <p className="font-bold text-secondary">{props.category}</p>
-          <ul className="w-full h-[505px] flex gap-2 overflow-x-auto">
+          <ul className="w-full aspect-video lg:h-[505px] flex gap-2 overflow-x-auto">
             {Array.from({ length: props.imgsQty }).map((_, index) => (
               <img
                 key={index}
@@ -27,13 +27,13 @@ export default function Project({ ...props }) {
                   props.imgsAlias
                 }${index + 1}.webp`}
                 alt="img"
-                className="w-full h-full object-fill object-top"
+                className="w-full h-full object-cover object-top"
               />
             ))}
           </ul>
           <p className="text-secondary text-sm">{props.description}</p>
           <p className="head">Tecnologías utilizadas</p>
-          <ul className="w-full flex justify-center gap-3">
+          <ul className="w-full flex flex-wrap justify-center gap-3">
             {props.technologies.map((technology, index) => (
               <li key={index} className="flex flex-col">
                 {technology.icon}

@@ -25,8 +25,8 @@ function App() {
   const changeSection = (index) => setCurrentSection(sections[index]);
 
   return (
-    <div className="relative px-28 py-16">
-      <div className="flex items-center justify-center gap-6 py-5 border-b-2 border-b-secondary">
+    <div className="relative px-8 md:px-14 lg:px-20 xl:px-28 py-16">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-6 py-5 border-b-2 border-b-secondary">
         <div className="w-40 h-40">
           <img
             src="imgs/face.webp"
@@ -35,10 +35,10 @@ function App() {
           />
         </div>
         <div>
-          <h1 className="text-4xl font-bold text-primary">
+          <h1 className="text-center lg:text-start text-3xl sm:text-4xl font-bold text-primary">
             Lenin Alberto Gómez Durán
           </h1>
-          <p className="text-2xl font-bold text-secondary">
+          <p className="text-lg sm:text-2xl font-bold text-secondary">
             Ingeniero en Desarrollo y Gestión de Software
           </p>
         </div>
@@ -50,7 +50,7 @@ function App() {
             <button
               key={index}
               type="button"
-              className={`w-72 py-2 font-bold text-secondary cursor-pointer ${
+              className={`w-1/3 py-2 font-bold text-secondary cursor-pointer ${
                 currentSection.name === section.name
                   ? "border-b-2 border-secondary"
                   : ""
@@ -84,7 +84,7 @@ function App() {
           <div>
             <p className="mb-1 font-bold">Contáctame</p>
             <div className="flex flex-col gap-2">
-              <div className="flex gap-2 items-center ">
+              <div className="flex gap-2 items-center">
                 <i class="fa-solid fa-phone"></i>
                 <p>+52 694 95 110 95</p>
               </div>
@@ -93,6 +93,36 @@ function App() {
                 <p>lgomez@example.com</p>
               </div>
             </div>
+          </div>
+        </div>
+        <div>
+          <div className="flex justify-end items-center gap-2">
+            <i class="fa-solid fa-graduation-cap"></i>
+            <p>
+              Estudié en{" "}
+              <a
+                href="https://utescuinapa.edu.mx/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary hover:underline"
+              >
+                UTEsc
+              </a>
+            </p>
+          </div>
+          <div className="flex justify-end items-center gap-2">
+            <i class="fa-solid fa-font-awesome"></i>
+            <p>
+              Íconos de{" "}
+              <a
+                href="https://fontawesome.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="hover:text-primary hover:underline"
+              >
+                Font Awesome
+              </a>
+            </p>
           </div>
         </div>
       </footer>
