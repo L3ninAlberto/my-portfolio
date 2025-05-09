@@ -66,8 +66,6 @@ function App() {
         {currentSection.content}
       </div>
 
-      <UpButton />
-
       <footer className="grid md:grid-cols-3 gap-5 py-2 text-secondary border-t-2 border-secondary">
         <div>
           <p className="font-bold">Sígueme</p>
@@ -109,6 +107,8 @@ function App() {
           </div>
         </div>
       </footer>
+
+      <UpButton />
     </div>
   );
 }
