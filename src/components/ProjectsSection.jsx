@@ -4,7 +4,7 @@ import { projects } from "../data";
 export default function ProjectsSection() {
   return (
     <section>
-      <ul className="grid lg:grid-cols-2 gap-6">
+      <ul className="grid lg:grid-cols-2 gap-5">
         {projects.map((project, index) => (
           <Project
             key={index}

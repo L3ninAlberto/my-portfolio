@@ -3,12 +3,9 @@ import { technologies } from "../data";
 export default function SkillsSection() {
   return (
     <section className="mb-6">
-      <ul className="grid grid-cols-3 gap-6">
+      <ul className="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
         {Object.values(technologies).map((technology, index) => (
-          <li
-            key={index}
-            className="flex gap-2 items-center p-2 border-2 border-secondary rounded-sm"
-          >
+          <li key={index} className="flex gap-2 items-center p-2 card">
             <div className="w-12 h-12 flex justify-center items-center">
               {technology.icon}
             </div>

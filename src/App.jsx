@@ -26,7 +26,7 @@ function App() {
 
   return (
     <div className="relative px-8 md:px-14 lg:px-20 xl:px-28 py-16">
-      <div className="flex flex-col lg:flex-row items-center justify-center gap-6 py-5 border-b-2 border-b-secondary">
+      <div className="flex flex-col lg:flex-row items-center justify-center gap-5 gap-y-2 py-5 border-b-2 border-b-secondary">
         <div className="w-40 h-40">
           <img
             src="imgs/face.webp"
@@ -34,11 +34,11 @@ function App() {
             className="w-full h-full rounded-full object-cover"
           />
         </div>
-        <div>
-          <h1 className="text-center lg:text-start text-3xl sm:text-4xl font-bold text-primary">
+        <div className="text-start">
+          <h1 className="text-3xl md:text-4xl font-bold text-primary">
             Lenin Alberto Gómez Durán
           </h1>
-          <p className="text-lg sm:text-2xl font-bold text-secondary">
+          <p className="text-lg md:text-xl font-bold text-secondary">
             Ingeniero en Desarrollo y Gestión de Software
           </p>
         </div>
@@ -68,49 +68,32 @@ function App() {
 
       <UpButton />
 
-      <footer className="flex justify-between py-2 text-secondary border-t-2 border-secondary">
-        <div className="flex gap-16">
-          <div>
-            <p className="mb-1 font-bold">Sígueme</p>
-            <div className="flex gap-2 text-xl">
-              <a href="#">
-                <i class="fa-brands fa-linkedin"></i>
-              </a>
-              <a href="#">
-                <i class="fa-brands fa-github"></i>
-              </a>
-            </div>
-          </div>
-          <div>
-            <p className="mb-1 font-bold">Contáctame</p>
-            <div className="flex flex-col gap-2">
-              <div className="flex gap-2 items-center">
-                <i class="fa-solid fa-phone"></i>
-                <p>+52 694 95 110 95</p>
-              </div>
-              <div className="flex gap-2 items-center">
-                <i class="fa-solid fa-envelope"></i>
-                <p>lgomez@example.com</p>
-              </div>
-            </div>
+      <footer className="grid md:grid-cols-3 gap-5 py-2 text-secondary border-t-2 border-secondary">
+        <div>
+          <p className="font-bold">Sígueme</p>
+          <div className="flex items-center gap-2 text-xl">
+            <a href="#" className="link">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" className="link">
+              <i class="fa-brands fa-github"></i>
+            </a>
           </div>
         </div>
         <div>
-          <div className="flex justify-end items-center gap-2">
-            <i class="fa-solid fa-graduation-cap"></i>
-            <p>
-              Estudié en{" "}
-              <a
-                href="https://utescuinapa.edu.mx/"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="hover:text-primary hover:underline"
-              >
-                UTEsc
-              </a>
-            </p>
+          <p className="font-bold">Contáctame</p>
+          <div className="flex items-center gap-2">
+            <i class="fa-solid fa-phone"></i>
+            <p>+52 694 95 110 95</p>
           </div>
-          <div className="flex justify-end items-center gap-2">
+          <div className="flex items-center gap-2">
+            <i class="fa-solid fa-envelope"></i>
+            <p>lgomez@example.com</p>
+          </div>
+        </div>
+        <div>
+          <p className="font-bold">Recursos</p>
+          <div className="flex items-center gap-2">
             <i class="fa-solid fa-font-awesome"></i>
             <p>
               Íconos de{" "}
@@ -118,7 +101,7 @@ function App() {
                 href="https://fontawesome.com/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-primary hover:underline"
+                className="link"
               >
                 Font Awesome
               </a>

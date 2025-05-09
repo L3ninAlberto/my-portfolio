@@ -6,12 +6,23 @@ body {
 }
 
 @theme {
+  --color-bg: #030508;
   --color-primary: #1be9b6;
   --color-secondary: #e3eae9;
+
+  --shadow-box: 0 4px var(--color-secondary);
 }
 
 @layer components {
   .head {
-    @apply text-secondary font-bold border-b-2 border-secondary;
+    @apply mb-4 text-xl text-secondary font-bold border-b-2 border-secondary;
+  }
+
+  .card {
+    @apply p-5 text-secondary bg-bg border-2 border-secondary rounded-sm shadow-box;
+  }
+
+  .link {
+    @apply text-secondary hover:text-primary hover:underline;
   }
 }
