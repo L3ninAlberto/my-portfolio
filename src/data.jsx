@@ -62,7 +62,7 @@ export const projects = [
       "Aplicación web con el objetivo de evaluar el conocimiento previo de todos los aspirantes de nuevo ingreso que quieren cursar alguna de las carreras de la Universidad Tecnológica de Escuinapa en el área de Expresión Oral y Escrita, Matemáticas e Inglés.",
     link: null,
     imgsAlias: "eu",
-    imgsQty: 4,
+    imgsQty: 3,
     technologies: [
       technologies.REACT,
       technologies.PHP,
