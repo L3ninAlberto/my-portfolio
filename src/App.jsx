@@ -25,7 +25,7 @@ function App() {
   const changeSection = (index) => setCurrentSection(sections[index]);
 
   return (
-    <div className="relative px-8 md:px-14 lg:px-20 xl:px-28 py-16">
+    <div className="px-8 md:px-14 lg:px-20 xl:px-28 py-16">
       <div className="flex flex-col lg:flex-row items-center justify-center gap-5 gap-y-2 py-5 border-b-2 border-b-secondary">
         <div className="w-40 h-40">
           <img
@@ -44,29 +44,27 @@ function App() {
         </div>
       </div>
 
-      <div className="mb-16 -translate-y-0.5">
-        <div className="text-center mb-5">
-          {sections.map((section, index) => (
-            <button
-              key={index}
-              type="button"
-              className={`w-1/3 py-2 font-bold text-secondary cursor-pointer ${
-                currentSection.name === section.name
-                  ? "border-b-2 border-secondary"
-                  : ""
-              }`}
-              onClick={() => changeSection(index)}
-            >
-              {section.name}
-            </button>
-          ))}
-        </div>
-
-        {/* section content */}
-        {currentSection.content}
+      <div className="text-center mb-5">
+        {sections.map((section, index) => (
+          <button
+            key={index}
+            type="button"
+            className={`w-1/3 py-2 font-bold text-secondary cursor-pointer ${
+              currentSection.name === section.name
+                ? "border-b-2 border-secondary"
+                : ""
+            }`}
+            onClick={() => changeSection(index)}
+          >
+            {section.name}
+          </button>
+        ))}
       </div>
 
-      <footer className="grid md:grid-cols-3 gap-5 py-2 text-secondary border-t-2 border-secondary">
+      {/* section content */}
+      {currentSection.content}
+
+      <footer className="mt-5 grid md:grid-cols-3 gap-5 py-2 text-secondary border-t-2 border-secondary">
         <div>
           <p className="font-bold">Sígueme</p>
           <div className="flex items-center gap-2 text-xl">
