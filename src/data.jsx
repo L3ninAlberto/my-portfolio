@@ -1,5 +1,12 @@
 export const workExperiences = [
   {
+    name: "Bridge Studio",
+    img: "bridge-studio.webp",
+    description:
+      "Participación como miembro y líder en el desarrollo de diversos proyectos para clientes internos.",
+    period: "Enero 2024 - Marzo 2025",
+  },
+  {
     name: "Universidad Tecnológica de Escuinapa",
     img: "utesc.webp",
     description:
@@ -28,29 +35,27 @@ export const technologies = {
     name: "JavaScript",
     icon: <i className="fa-brands fa-js text-[#f1f114] text-4xl"></i>,
   },
-  PHP: {
-    name: "PHP",
-    icon: <i className="fa-brands fa-php text-[#703ef7] text-4xl"></i>,
-  },
   REACT: {
     name: "React",
     icon: <i className="fa-brands fa-react text-[#19c0f6] text-4xl"></i>,
   },
-  LARAVEL: {
-    name: "Laravel",
-    icon: <i className="fa-brands fa-laravel text-[#fa1906] text-4xl"></i>,
-  },
-  GIT: {
-    name: "GIT",
-    icon: <i className="fa-brands fa-git-alt text-[#ea4233] text-4xl"></i>,
-  },
-  MYSQL: {
-    name: "MySQL",
-    icon: <i className="fa-solid fa-database text-[#1275b6] text-4xl"></i>,
+  TAILWINDCSS: {
+    name: "Tailwind CSS",
+    icon: (
+      <img src="assets/technologies/tailwindcss.svg" alt="Tailwindcss logo" />
+    ),
   },
   BOOTSTRAP: {
     name: "Bootstrap",
     icon: <i className="fa-brands fa-bootstrap text-[#801af9] text-4xl"></i>,
+  },
+  PHP: {
+    name: "PHP",
+    icon: <i className="fa-brands fa-php text-[#703ef7] text-4xl"></i>,
+  },
+  LARAVEL: {
+    name: "Laravel",
+    icon: <i className="fa-brands fa-laravel text-[#fa1906] text-4xl"></i>,
   },
 };
 
@@ -63,12 +68,7 @@ export const projects = [
     link: null,
     imgsAlias: "eu",
     imgsQty: 3,
-    technologies: [
-      technologies.REACT,
-      technologies.PHP,
-      technologies.MYSQL,
-      technologies.GIT,
-    ],
+    technologies: [technologies.REACT, technologies.PHP],
   },
   {
     name: "Sitio IDGS",
@@ -78,12 +78,7 @@ export const projects = [
     link: "https://sitioidgs.proyectosidgs.com/",
     imgsAlias: "sidgs",
     imgsQty: 3,
-    technologies: [
-      technologies.REACT,
-      technologies.PHP,
-      technologies.MYSQL,
-      technologies.GIT,
-    ],
+    technologies: [technologies.REACT, technologies.PHP],
   },
   {
     name: "Aula Virtual de Idiomas UTEsc",
@@ -93,12 +88,7 @@ export const projects = [
     link: null,
     imgsAlias: "avi",
     imgsQty: 6,
-    technologies: [
-      technologies.REACT,
-      technologies.PHP,
-      technologies.MYSQL,
-      technologies.GIT,
-    ],
+    technologies: [technologies.REACT, technologies.PHP],
   },
   {
     name: "Servicios UTEsc",
@@ -113,7 +103,6 @@ export const projects = [
       technologies.CSS,
       technologies.JS,
       technologies.LARAVEL,
-      technologies.MYSQL,
     ],
   },
   {
@@ -130,7 +119,6 @@ export const projects = [
       technologies.JS,
       technologies.BOOTSTRAP,
       technologies.PHP,
-      technologies.MYSQL,
     ],
   },
   {
@@ -151,12 +139,7 @@ export const projects = [
     link: null,
     imgsAlias: "msc",
     imgsQty: 1,
-    technologies: [
-      technologies.HTML,
-      technologies.CSS,
-      technologies.JS,
-      technologies.GIT,
-    ],
+    technologies: [technologies.HTML, technologies.CSS, technologies.JS],
   },
   {
     name: "Routime",
@@ -170,7 +153,6 @@ export const projects = [
       technologies.REACT,
       technologies.BOOTSTRAP,
       technologies.PHP,
-      technologies.MYSQL,
     ],
   },
 ];

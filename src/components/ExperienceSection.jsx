@@ -7,8 +7,8 @@ export default function ExperienceSection() {
         {workExperiences.map((experience, index) => (
           <li key={index} className="card">
             <h3 className="head">{experience.name}</h3>
-            <div className="flex gap-2">
-              <div>
+            <div className="flex gap-5">
+              <div className="grow">
                 <p className="font-bold">{experience.period}</p>
                 <p className="text-sm">{experience.description}</p>
               </div>
