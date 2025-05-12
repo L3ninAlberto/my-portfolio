@@ -28,6 +28,10 @@ body {
 }
 
 @layer components {
+  .hp {
+    @apply px-8 md:px-14 lg:px-20 xl:px-28;
+  }
+
   .head {
     @apply mb-4 text-xl text-secondary font-bold border-b-2 border-secondary;
   }

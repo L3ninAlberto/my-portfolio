@@ -78,7 +78,7 @@ export default function ProjectsSection() {
       </section>
 
       <div
-        className={`z-10 fixed top-0 left-0 w-full h-full p-10 flex justify-center items-center ${
+        className={`z-10 fixed top-0 left-0 w-full h-screen py-12 hp flex justify-center items-center ${
           showImage ? "block" : "hidden"
         }`}
         style={{ backdropFilter: "blur(5px)" }}
@@ -86,7 +86,7 @@ export default function ProjectsSection() {
         <img
           src={imagePath}
           alt="Imagen ampliada"
-          className="object-contain rounded-sm shadow-xl"
+          className="w-fit max-w-full h-fit max-h-full object-contain rounded-sm shadow-xl"
         />
         <button
           className="absolute top-3 right-3 cursor-pointer"

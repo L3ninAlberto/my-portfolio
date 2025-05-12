@@ -25,7 +25,7 @@ function App() {
   const changeSection = (index) => setCurrentSection(sections[index]);
 
   return (
-    <div className="px-8 md:px-14 lg:px-20 xl:px-28 py-16">
+    <div className="hp py-16">
       <div className="flex flex-col lg:flex-row items-center justify-center gap-5 gap-y-2 py-5 border-b-2 border-b-secondary">
         <div className="w-40 h-40">
           <img
