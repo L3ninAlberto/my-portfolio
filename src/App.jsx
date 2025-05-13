@@ -1,7 +1,6 @@
 import { useState } from "react";
 import ProjectsSection from "./components/ProjectsSection";
 import SkillsSection from "./components/SkillsSection";
-import ExperienceSection from "./components/ExperienceSection";
 import UpButton from "./components/UpButton";
 
 function App() {
@@ -13,10 +12,6 @@ function App() {
     {
       name: "Habilidades",
       content: <SkillsSection />,
-    },
-    {
-      name: "Experiencia",
-      content: <ExperienceSection />,
     },
   ];
 
@@ -39,7 +34,7 @@ function App() {
             Lenin Alberto Gómez Durán
           </h1>
           <p className="text-lg md:text-xl font-bold text-secondary">
-            Ingeniero en Desarrollo y Gestión de Software
+            Desarrollador Web
           </p>
         </div>
       </div>

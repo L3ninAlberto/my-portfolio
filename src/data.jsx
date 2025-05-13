@@ -1,22 +1,5 @@
-export const workExperiences = [
-  {
-    name: "Bridge Studio",
-    img: "bridge-studio.webp",
-    description:
-      "Participación como miembro y líder en el desarrollo de diversos proyectos para clientes internos.",
-    period: "Enero 2024 - Marzo 2025",
-  },
-  {
-    name: "Universidad Tecnológica de Escuinapa",
-    img: "utesc.webp",
-    description:
-      "Participación en la construcción del proyecto Examen UTEsc durante mi periodo de estadías profesionales junto al encargado de sistemas de la Universidad utilizando la metodología en Espiral.",
-    period: "Mayo - Agosto del 2022",
-  },
-];
-
 const projectCategories = {
-  S: "Proyecto de estadías profesionales",
+  S: "Proyecto de prácticas profesionales",
   UT: "Proyecto universitario en equipo",
   UI: "Proyecto universitario individual",
   P: "Proyecto personal",
@@ -57,6 +40,10 @@ export const technologies = {
     name: "Laravel",
     icon: <i className="fa-brands fa-laravel text-[#fa1906] text-4xl"></i>,
   },
+  SQL: {
+    name: "SQL",
+    icon: <i class="fa-solid fa-database text-[#00758F] text-4xl" />,
+  },
 };
 
 export const projects = [
@@ -67,8 +54,8 @@ export const projects = [
       "Aplicación web con el objetivo de evaluar el conocimiento previo de todos los aspirantes de nuevo ingreso que quieren cursar alguna de las carreras de la Universidad Tecnológica de Escuinapa en el área de Expresión Oral y Escrita, Matemáticas e Inglés.",
     link: null,
     imgsAlias: "eu",
-    imgsQty: 3,
-    technologies: [technologies.REACT, technologies.PHP],
+    imgsQty: 8,
+    technologies: [technologies.REACT, technologies.PHP, technologies.SQL],
   },
   {
     name: "Sitio IDGS",
@@ -78,7 +65,7 @@ export const projects = [
     link: "https://sitioidgs.proyectosidgs.com/",
     imgsAlias: "sidgs",
     imgsQty: 3,
-    technologies: [technologies.REACT, technologies.PHP],
+    technologies: [technologies.REACT, technologies.PHP, technologies.SQL],
   },
   {
     name: "Aula Virtual de Idiomas UTEsc",
@@ -88,7 +75,7 @@ export const projects = [
     link: null,
     imgsAlias: "avi",
     imgsQty: 6,
-    technologies: [technologies.REACT, technologies.PHP],
+    technologies: [technologies.REACT, technologies.PHP, technologies.SQL],
   },
   {
     name: "Servicios UTEsc",
@@ -103,6 +90,7 @@ export const projects = [
       technologies.CSS,
       technologies.JS,
       technologies.LARAVEL,
+      technologies.SQL,
     ],
   },
   {
@@ -119,6 +107,7 @@ export const projects = [
       technologies.JS,
       technologies.BOOTSTRAP,
       technologies.PHP,
+      technologies.SQL,
     ],
   },
   {
@@ -153,6 +142,7 @@ export const projects = [
       technologies.REACT,
       technologies.BOOTSTRAP,
       technologies.PHP,
+      technologies.SQL,
     ],
   },
 ];
