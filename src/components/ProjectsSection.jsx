@@ -32,7 +32,7 @@ export default function ProjectsSection() {
                       project.imgsAlias
                     }${index + 1}.webp`}
                     alt="img"
-                    className="w-[96%] h-full object-cover rounded-sm cursor-pointer"
+                    className="w-[94%] h-full object-cover rounded-sm cursor-pointer"
                     onClick={() =>
                       openImage(
                         `assets/projects_imgs/${project.imgsAlias}/${
