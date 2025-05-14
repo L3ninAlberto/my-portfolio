@@ -22,10 +22,18 @@ export const technologies = {
     name: "React",
     icon: <i className="fa-brands fa-react text-[#19c0f6] text-4xl" />,
   },
+  VUE: {
+    name: "Vue.js",
+    icon: <i class="fa-brands fa-vuejs text-[#42b883] text-4xl" />,
+  },
   TAILWINDCSS: {
     name: "Tailwind CSS",
     icon: (
-      <img src="assets/technologies/tailwindcss.svg" alt="Tailwindcss logo" />
+      <img
+        src="assets/technologies/tailwindcss.svg"
+        alt="Tailwindcss logo"
+        className="w-9 h-9 aspect-square object-contain"
+      />
     ),
   },
   BOOTSTRAP: {
@@ -47,6 +55,16 @@ export const technologies = {
 };
 
 export const projects = [
+  {
+    name: "The Best Sonic Music",
+    category: projectCategories.P,
+    description:
+      "Sitio web interactivo a modo de juego de rondas de dos en dos con el objetivo de elegir la mejor música de Sonic The Hedgehog.",
+    link: "https://l3ninalberto.github.io/best-sonic-music/",
+    imgsAlias: "bsm",
+    imgsQty: 3,
+    technologies: [technologies.VUE, technologies.TAILWINDCSS],
+  },
   {
     name: "Examen UTEsc",
     category: projectCategories.S,
