@@ -8,19 +8,19 @@ const projectCategories = {
 export const technologies = {
   HTML: {
     name: "HTML",
-    icon: <i className="fa-brands fa-html5 text-[#F16529] text-4xl"></i>,
+    icon: <i className="fa-brands fa-html5 text-[#F16529] text-4xl" />,
   },
   CSS: {
     name: "CSS",
-    icon: <i className="fa-brands fa-css text-[#663399] text-4xl"></i>,
+    icon: <i className="fa-brands fa-css text-[#663399] text-4xl" />,
   },
   JS: {
     name: "JavaScript",
-    icon: <i className="fa-brands fa-js text-[#f1f114] text-4xl"></i>,
+    icon: <i className="fa-brands fa-js text-[#f1f114] text-4xl" />,
   },
   REACT: {
     name: "React",
-    icon: <i className="fa-brands fa-react text-[#19c0f6] text-4xl"></i>,
+    icon: <i className="fa-brands fa-react text-[#19c0f6] text-4xl" />,
   },
   TAILWINDCSS: {
     name: "Tailwind CSS",
@@ -30,19 +30,19 @@ export const technologies = {
   },
   BOOTSTRAP: {
     name: "Bootstrap",
-    icon: <i className="fa-brands fa-bootstrap text-[#801af9] text-4xl"></i>,
+    icon: <i className="fa-brands fa-bootstrap text-[#801af9] text-4xl" />,
   },
   PHP: {
     name: "PHP",
-    icon: <i className="fa-brands fa-php text-[#703ef7] text-4xl"></i>,
+    icon: <i className="fa-brands fa-php text-[#703ef7] text-4xl" />,
   },
   LARAVEL: {
     name: "Laravel",
-    icon: <i className="fa-brands fa-laravel text-[#fa1906] text-4xl"></i>,
+    icon: <i className="fa-brands fa-laravel text-[#fa1906] text-4xl" />,
   },
   SQL: {
     name: "SQL",
-    icon: <i class="fa-solid fa-database text-[#00758F] text-4xl" />,
+    icon: <i className="fa-solid fa-database text-[#00758F] text-4xl" />,
   },
 };
 

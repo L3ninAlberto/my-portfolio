@@ -19,7 +19,7 @@ export default function UpButton() {
       } fixed bottom-5 right-5 w-11 h-11 flex justify-center items-center cursor-pointer card rounded-full`}
       onClick={up}
     >
-      <i class="fa-solid fa-caret-up text-2xl"></i>
+      <i className="fa-solid fa-caret-up text-2xl"></i>
     </button>
   );
 }

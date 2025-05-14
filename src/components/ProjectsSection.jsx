@@ -57,7 +57,7 @@ export default function ProjectsSection() {
                     rel="noopener noreferrer"
                     className="w-fit flex gap-1 items-center text-lg font-bold link"
                   >
-                    <i class="fa-solid fa-globe"></i>
+                    <i className="fa-solid fa-globe"></i>
                     Ir al proyecto
                   </a>
                 )}
